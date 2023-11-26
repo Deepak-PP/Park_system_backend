@@ -9,7 +9,6 @@ const memberControl = require("../controller/memberControl");
 parkRoutes.get("/defaultMembersList", memberControl.getDefaultMembers);
 parkRoutes.get("/parkSlotsData", memberControl.getparkSlotsData);
 parkRoutes.post("/temporaryLeave", memberControl.temporaryLeaveAdd);
-parkRoutes.post("/temporaryPerson",memberControl.temporaryPersonAdd);
-
+parkRoutes.post("/temporaryPerson", memberControl.temporaryPersonAdd);
 
 module.exports = parkRoutes;
